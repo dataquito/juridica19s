@@ -101,6 +101,10 @@ export default Object.assign({
         loader: 'babel-loader'
       },
       {
+        test: /\.(jpg|jpeg|png|svg|webm)$/,
+        use: 'file-loader'
+      },
+      {
         test: /\.scss$/,
         use: [
           { loader: 'file-loader', options: { name: '[name].css' } },

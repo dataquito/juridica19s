@@ -24,7 +24,7 @@ if (window.location.pathname !== '/login') {
 export default () => (
   <Provider store={store}>
     <IntlProvider locale={localeData.locale} messages={localeData.messages}>
-      <Main />
+      <Main/>
     </IntlProvider>
   </Provider>
 );

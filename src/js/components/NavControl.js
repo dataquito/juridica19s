@@ -22,7 +22,7 @@ class NavControl extends Component {
           <Box
             direction='row'
             responsive={false}
-            pad={{ between: 'small' }}
+            pad={{ between: 'medium' }}
           >
             <Logo />
             {title}

@@ -170,11 +170,12 @@ class Landing extends Component {
                 heading="Herramientas jurídicas y necesidades post Sismo"
                 description="#juridica19s es una plataforma que recolecta información y herramientas para atender cualquier tipo de necesidades legales ocasionadas por el sismo."
                 link={<Anchor label='Solicita ayuda legal'
-                  href='#'
+                  href='https://goo.gl/forms/LB3B1uiXdpkBKhI53'
+                  target='_blank'
                   primary={true}
                   reverse={false}
                   disabled={false}
-                  path='/' />}
+                   />}
               >
               </Card>
             </Box>
@@ -309,11 +310,11 @@ class Landing extends Component {
                 contentPad="small"
                 label='Suma tu proyecto'
                 link={<Anchor label='Ver Más'
-                  href='#'
+                  href='https://goo.gl/forms/ERX7XRPJETbxxj4f1'
                   primary={true}
                   reverse={false}
                   disabled={false}
-                  path='/' />}
+                  />}
                 headingStrong={false} />
 
             </Box>
@@ -445,15 +446,6 @@ class Landing extends Component {
             <Menu direction='row'
               size='small'
               dropAlign={{"right": "right"}}>
-              <Anchor href='#'>
-                Support
-              </Anchor>
-              <Anchor href='#'>
-                Contact
-              </Anchor>
-              <Anchor href='#'>
-                About
-              </Anchor>
             </Menu>
           </Box>
         </Footer>

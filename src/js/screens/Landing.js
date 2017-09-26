@@ -36,7 +36,8 @@ import Section from 'grommet/components/Section';
 import { getMessage } from 'grommet/utils/Intl';
 
 import NavControl from '../components/NavControl';
-import Infographic_1 from '../../images/infojuridica1-1.jpg';
+import Infographic_1 from '../../images/flyer_red_probono.jpg';
+
 // import {
 //   loadDashboard, unloadDashboard
 // } from '../actions/dashboard';
@@ -50,54 +51,49 @@ const Graph = props => {
         "categories": [
           {
             "id": "category-1",
-            "label": "Situación Actual",
+            "label": "Pilar Informativo",
             "items": [
               {
                 "id": "item-1-1",
-                "label": "Inmueble Dañado",
-                "node": <Box colorIndex='brand'  pad='small'>Inmueble Dañado</Box>
+                "label": "Infografías",
+                "node": <Box colorIndex='brand'  pad='small'>Infografías</Box>
               },
               {
                 "id": "item-1-2",
-                "label": "Perdida de Inmueble",
-                "node": <Box colorIndex='brand'  pad='small'>Perdida de Inmueble</Box>
-              },
-              {
-                "id": "item-1-3",
-                "label": "Inmueble perdida de Escritura",
-                "node": <Box colorIndex='brand'  pad='small'>Renta de Inmueble</Box>
+                "label": "Preguntas frecuentes",
+                "node": <Box colorIndex='brand'  pad='small'>Preguntas Frecuentes</Box>
               }
             ]
           },
           {
             "id": "category-2",
-            "label": "Opciones de Ayuda",
+            "label": "Pilar de Atención Directa",
             "items": [
               {
                 "id": "item-2-1",
-                "label": "Fourth item",
-                "node": <Box colorIndex='brand'  pad='small'>¿Cuentas con Escrituras?</Box>
+                "label": "Registro de Casos",
+                "node": <Box colorIndex='brand'  pad='small'>Registro de Casos</Box>
               },
               {
                 "id": "item-2-2",
-                "label": "Fifth item",
-                "node": <Box colorIndex='brand'  pad='small'>¿Cuentas con Seguro de Casa</Box>
+                "label": "Vinculación Externa",
+                "node": <Box colorIndex='brand'  pad='small'>Vinculación Externa</Box>
               }
             ]
           },
           {
             "id": "category-3",
-            "label": "ProBono",
+            "label": "Análisis Post-Desastre",
             "items": [
               {
                 "id": "item-3-1",
-                "label": "Sixth item",
-                "node": <Box colorIndex='brand'  pad='small'>¿Has tenido contacto con tu aseguradora?</Box>
+                "label": "Análisis Agregado",
+                "node": <Box colorIndex='brand'  pad='small'>Análisis Agregado</Box>
               },
               {
                 "id": "item-3-2",
-                "label": "Seventh item",
-                "node": <Box colorIndex='brand'  pad='small'>Extra</Box>
+                "label": "Fortalecimiento Jurídico",
+                "node": <Box colorIndex='brand'  pad='small'>Fortalecimiento Jurídico</Box>
               }
             ]
           }
@@ -141,7 +137,7 @@ class Landing extends Component {
             responsive={false}>
           </Box>
         </Header>
-        <Hero background={<Image src='http://grommet-primary-page-vanilla.grmmt.co/img/marquee.jpg'
+        <Hero background={<Image src='http://assets.tiempo.com.mx/uploads/imagen/imagen/135208/Cientos-personas-colapsados-Ciudad-Mexico_MILIMA20170919_0481_3.jpg'
             fit='cover'
             full={true} />}
           backgroundColorIndex='dark'
@@ -170,7 +166,7 @@ class Landing extends Component {
                 size="large"
                 contentPad="medium"
                 headingStrong
-                label="Label"
+                label="#Juridica19S"
                 heading="Herramientas jurídicas y necesidades post Sismo"
                 description="#juridica19s es una plataforma que recolecta información y herramientas para atender cualquier tipo de necesidades legales ocasionadas por el sismo."
                 link={<Anchor label='Solicita ayuda legal'
@@ -206,38 +202,32 @@ class Landing extends Component {
           >
             <Box basis="1/2">
               <Heading tag="h2" strong margin="none">Jurídica 19-S</Heading>
-              <Paragraph size="medium" width="large" textSize="small">Vestibulum consectetur purus a egestas tempor. Mauris vel fermentum quam, eu sagittis velit. Morbi nec risus a diam efficitur imperdiet vitae eget eros. Vestibulum massa purus, vehicula in ultricies vel, tincidunt eu mi. In aliquam pulvinar nisl id semper. Fusce accumsan nulla enim, sed scelerisque elit fringilla sed. Aliquam sed leo et tellus pellentesque hendrerit. Fusce lobortis risus quis elit auctor, vel fringilla lectus cursus. Maecenas id diam vitae orci congue lobortis sit amet quis nunc. </Paragraph>
+              <Paragraph size="medium" width="large" textSize="small"></Paragraph>
             </Box>
             <Box basis="1/2">
               <Graph/>
             </Box>
           </Box>
-          <Box direction="row" basis="full" alignContent="stretch" pad="small">
+
+          <Box direction="row" basis="full" alignContent="stretch" pad="small" colorIndex='grey-4-a'
+>
+
             <Box basis='1/3' margin="small">
-              <Heading tag="h3" strong margin="none">Situacion Actual</Heading>
-              <Paragraph size="small" width="full" textSize="small">Vestibulum consectetur purus a egestas tempor. Mauris vel fermentum quam, eu sagittis velit. Morbi nec risus a diam efficitur imperdiet vitae eget eros. Vestibulum massa purus, vehicula in ultricies vel, tincidunt eu mi. In aliquam pulvinar nisl id semper. Fusce accumsan nulla enim, sed scelerisque elit fringilla sed. Aliquam sed leo et tellus pellentesque hendrerit. Fusce lobortis risus quis elit auctor, vel fringilla lectus cursus. Maecenas id diam vitae orci congue lobortis sit amet quis nunc. </Paragraph>
+              <Heading tag="h3" strong margin="none">Pilar Informativo</Heading>
+              <Paragraph size="small" width="full" textSize="small"> Información para el público en general y para abogadas y abogados en las que se responden a las preguntas legales principales derivadas de afectaciones por sismo.</Paragraph>
             </Box>
             <Box basis='1/3' margin="small">
-              <Heading tag="h3" strong margin="none">Recomendaciones</Heading>
-              <Paragraph size="small" width="full" textSize="small">Maecenas id diam vitae orci congue lobortis sit amet quis nunc. Donec sit amet faucibus sem, nec lacinia urna. Vestibulum sit amet metus diam. Curabitur auctor neque sit amet mi mollis, quis consectetur est molestie. Nam id auctor velit, quis maximus ipsum. Nullam non dictum est.</Paragraph>
+              <Heading tag="h3" strong margin="none">Pilar de Atención Directa</Heading>
+              <Paragraph size="small" width="full" textSize="small"> Pide una jornada para tu comunidad en la que abogadas y abogados asistan a orientarte en tus necesidades legales. O, llena el formulario para que se te asigne un asesor o asesora jurídica quien te contactará por teléfono o email para darte orientación.</Paragraph>
             </Box>
             <Box basis='1/3' margin="small">
-              <Heading tag="h3" strong margin="none">Acciones a Futuro</Heading>
-              <Paragraph size="small" width="full" textSize="small">Mauris et mattis leo. Sed bibendum, massa nec lobortis facilisis, odio sem placerat augue, pulvinar lobortis diam lorem eget odio. Proin blandit fringilla condimentum. Phasellus efficitur sapien et lobortis commodo. Ut dolor mi, sollicitudin ut justo ac, suscipit bibendum est. Integer a felis lacus.</Paragraph>
+              <Heading tag="h3" strong margin="none">Análisis Post-Desastre</Heading>
+              <Paragraph size="small" width="full" textSize="small">Consulta los resultados de las diversas iniciativas y sus planes de seguimiento.</Paragraph>
             </Box>
           </Box>
-          <Box
-            colorIndex='grey-4-a'
-            pad='small'
-            direction="column"
-            alignContent="stretch"
-            responsive
-            basis="full">
-            <Heading tag="h3" strong margin="none">Conoce tus obligaciones y derechos de manera sencilla.</Heading>
-            <Questions/>
-          </Box>
+
           <Box direction="row">
-            <Box basis='1/3'
+              <Box basis='1/3'
               pad={{
                 horizontal: "large",
                 vertical: "large",
@@ -252,17 +242,17 @@ class Landing extends Component {
               focusable
               size="large"
               colorIndex="light-1">
-              <Card thumbnail={<Image src={"https://previews.123rf.com/images/mayrum/mayrum1502/mayrum150200053/36964996-Character-lawyer-law-concept-Vector-illustration-flat-style-Stock-Vector.jpg"}/>}
+              <Card thumbnail={<Image src={"https://image.flaticon.com/icons/svg/265/265667.svg"}/>}
                 textAlign="center"
                 margin="small"
                 contentPad="small"
                 label='Ayudar como Abogado'
                 link={<Anchor label='Ver Más'
-                  href='#'
+                  href='https://docs.google.com/forms/d/16va-w1Xu_08GDOl1R0hWKD9r1VNU9uU7gLAHm61jF3Y/viewform?ts=561c096c&edit_requested=true'
                   primary={true}
                   reverse={false}
                   disabled={false}
-                  path='/' />}
+                  />}
                 headingStrong={false} />
 
             </Box>
@@ -282,17 +272,17 @@ class Landing extends Component {
               size="large"
               colorIndex="light-1">
               <Card thumbnail={
-                <Image src={'https://previews.123rf.com/images/mayrum/mayrum1410/mayrum141000008/32651792-Character-student-education-concept-Vector-illustration--Stock-Photo.jpg'}/>}
+                <Image src={'https://image.flaticon.com/icons/svg/554/554866.svg'}/>}
                 textAlign="center"
                 margin="small"
                 contentPad="small"
                 label='Solicitar ayuda'
                 link={<Anchor label='Ver Más'
-                  href='#'
+                  href='https://goo.gl/forms/8I3L0raWCUnCxlE62'
                   primary={true}
                   reverse={false}
                   disabled={false}
-                  path='/' />}
+                  />}
                 headingStrong={false} />
 
             </Box>
@@ -313,11 +303,11 @@ class Landing extends Component {
               size="large"
               colorIndex="light-1">
               <Card thumbnail={
-                <Image src={'https://previews.123rf.com/images/mayrum/mayrum1410/mayrum141000042/32987898-Multitasking-character-programmer-Flat-style-vector-illustration-Stock-Vector.jpg'}/>}
+                <Image src={'https://image.flaticon.com/icons/svg/568/568883.svg'}/>}
                 textAlign="center"
                 margin="small"
                 contentPad="small"
-                label='Ayudar como ciudadano'
+                label='Suma tu proyecto'
                 link={<Anchor label='Ver Más'
                   href='#'
                   primary={true}
@@ -329,6 +319,19 @@ class Landing extends Component {
             </Box>
           </Box>
         </Box>
+
+          <Box
+            colorIndex='grey-4-a'
+            pad='small'
+            direction="column"
+            alignContent="stretch"
+            responsive
+            basis="full">
+            <Heading tag="h3" strong margin="none">Conoce tus obligaciones y derechos de manera sencilla.</Heading>
+            <Questions/>
+          </Box>
+
+
         <Box align="center"
           colorIndex="light-2"
           direction="column"
@@ -337,6 +340,7 @@ class Landing extends Component {
           responsive
           pad={{ vertical: 'large' }}
         >
+
           <Box className="columns-container"
             align="center"
             size={{ width: "xxlarge" }}
@@ -382,50 +386,16 @@ class Landing extends Component {
                   full={true} />}
                 margin="small"
                 contentPad="medium"
-                label='Sample Label'
-                headingStrong={false} />
-              <Card thumbnail={<Image src={Infographic_1}
-                  fit='cover'
-                  full={true} />}
-                margin="small"
-                contentPad="medium"
-                label='Sample Label'
-                headingStrong={false} />
-
-              <Card thumbnail={<Image src={Infographic_1}
-                  fit='cover'
-                  full={true} />}
-                margin="small"
-                contentPad="medium"
-                label='Sample Label'
+                label='Apoyo Jurídico'
                 headingStrong={false} />
             </Columns>
+
             <span style={{ fontSize: 10}}>La información contenida en esta guía o imagen es general y tiene carácter exclusivamente orientador; por lo tanto, no es y no deberá ser interpretado como una recomendación u opinión para llevar a cabo o abstenerse de llevar a cabo cualquier acción respecto a los temas discutidos en la misma. Esta guía o imagen no sustituye a la asesoría jurídica especializada que, para cada caso, las usuarios deberán obtener antes de actuar sobre uno o más de los temas discutidos en la misma. Los abogados y organizaciones involucradas en la preparación de esta guía general, no emiten ninguna opinión o juicio sobre, y asimismo, de manera expresa, no se hacen responsables de la exactitud de la información contenida en la misma.</span>
           </Box>
         </Box>
-        <Box pad='medium'
-          basis="full"
-          direction="column">
-          <Box basis="full" direction="row">
-            <Box basis="1/2">
-              <Heading tag='h3' strong={true}>SOY ABOGADO/ABOGADA ¿CÓMO AYUDAR?</Heading>
-              <Paragraph size='xxlarge'>¿Eres abogado/a o perteneces a una firma de abogados y están interesados en realizar trabajo pro bono?</Paragraph>
-              <Paragraph size='xxlarge'>Vestibulum massa purus, vehicula in ultricies vel, tincidunt eu mi. In aliquam pulvinar nisl id semper. Fusce accumsan nulla enim, sed scelerisque elit fringilla sed. Aliquam sed leo et tellus pellentesque hendrerit. Fusce lobortis risus quis elit auctor, vel fringilla lectus cursus. Maecenas id diam vitae orci congue lobortis sit amet quis nunc. Donec sit amet faucibus sem, nec lacinia urna. Vestibulum sit amet metus diam. Curabitur auctor neque sit amet mi mollis, quis consectetur est molestie. Nam id auctor velit, quis maximus ipsum. Nullam non dictum est. Interdum et malesuada fames ac ante ipsum primis in faucibus.</Paragraph>
-              <Anchor icon={<Edit />}
-                label='Comienza a ayudar'
-                href='#'
-                primary={true} />
-            </Box>
-            <Box basis="1/2" alignContent="center" align="center" alignSelf="center">
-              <Quote credit='Janet Reno'>
-                <Paragraph>I think lawyers who engage in pro bono service to protect those who cannot help themselves are truly the heroes and the heroines of the legal profession.</Paragraph>
-              </Quote>
-            </Box>
-          </Box>
-          <Box basis="full" pad="large">
-            <span style={{ fontSize: 10}}>La información contenida en esta guía o imagen es general y tiene carácter exclusivamente orientador; por lo tanto, no es y no deberá ser interpretado como una recomendación u opinión para llevar a cabo o abstenerse de llevar a cabo cualquier acción respecto a los temas discutidos en la misma. Esta guía o imagen no sustituye a la asesoría jurídica especializada que, para cada caso, las usuarios deberán obtener antes de actuar sobre uno o más de los temas discutidos en la misma. Los abogados y organizaciones involucradas en la preparación de esta guía general, no emiten ninguna opinión o juicio sobre, y asimismo, de manera expresa, no se hacen responsables de la exactitud de la información contenida en la misma.</span>
-          </Box>
-        </Box>
+
+
+
         <hr/>
         <Box pad="small">
           <Charts/>
@@ -436,6 +406,30 @@ class Landing extends Component {
         </Box>
         <Box>
         </Box>
+
+        <Box pad='medium'
+          basis="full"
+          colorIndex="light-2"
+          direction="column">
+          <Box basis="full" direction="row">
+            <Box basis="1/2">
+              <Heading tag='h3' strong={true}>SOY ABOGADO/ABOGADA ¿CÓMO AYUDAR?</Heading>
+              <Paragraph size='xxlarge'>¿Eres abogado/a o perteneces a una firma de abogados y están interesados en realizar trabajo pro bono?</Paragraph>
+              <Anchor icon={<Edit />}
+                label='Comienza a ayudar'
+                href='https://docs.google.com/forms/d/16va-w1Xu_08GDOl1R0hWKD9r1VNU9uU7gLAHm61jF3Y/viewform?ts=561c096c&edit_requested=true'
+                target='_blank'
+                primary={true} />
+            </Box>
+            <Box basis="1/2" alignContent="center" align="center" alignSelf="center">
+              <Quote >
+                <Paragraph>La palabra Pro Bono deriva del latín pro bono publico que quiere decir “por el bien público” o “por el bien común”. A nivel mundial la comunidad legal entiende por actividad Pro Bono, el trabajo de asesoramiento y/o representación jurídica gratuita en beneficio de la sociedad.</Paragraph>
+              </Quote>
+            </Box>
+          </Box>
+        </Box>
+
+
         <Footer justify='between'
           pad="small"
           size='large'>
@@ -446,7 +440,7 @@ class Landing extends Component {
             align='center'
             pad={{"between": "medium"}}>
             <Paragraph margin='none'>
-              © 2016
+              © 2017 #Juridica19S
             </Paragraph>
             <Menu direction='row'
               size='small'

@@ -1,3 +1,4 @@
+
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
@@ -43,6 +44,8 @@ import fbm from '../../images/fbm.png';
 import PROBONOMX from '../../images/PROBONOMX_blanco.png';
 import probono1 from '../../images/probono1.jpg';
 import guia_juridica from '../../images/guia_juridica.jpg';
+import odv from '../../images/observatorio_de_vivienda_t.png';
+
 
 
 // import {
@@ -210,19 +213,23 @@ class Landing extends Component {
             pad="small"
           >
             <Box basis="1/2">
-              <Heading tag="h2" strong margin="none">Jurídica 19-S</Heading>
+
+              <Heading tag="h2" strong margin="small">Jurídica 19-S</Heading>
               <Paragraph size="medium" width="large" >
-                    La Fundación Appleseed México, La Fundación Barra Mexicana y el Centro Mexicano Pro Bono unen esfuerzos para brindar esta orientación a través de sus alianzas con universidades, abogados, abogadas y firmas comprometidas con este esfuerzo.
+                    La Fundación <b>Appleseed México</b>, La <b>Fundación Barra Mexicana</b> y el <b>Centro Mexicano Pro Bono</b> unen esfuerzos para brindar esta orientación a través de sus alianzas con universidades, abogados, abogadas y firmas comprometidas con este esfuerzo.
                     Se invita a las universidades, demás Organizaciones de la Sociedad Civil, Colegios de Abogados y abogadas de todo el país y sociedad en general a unirse a este esfuerzo y compartir información verídica y útil para las personas en necesidad.
               </Paragraph>
-
-              <Paragraph size="small" width="large" >
-              #Jurídica19S Powered by Observatorio de Vivienda & Dataquito
+              <Paragraph  size="small" width="small" margin='none' >
+                #Jurídica19S Powered by <a href='http://www.observatoriodevivienda.org' target='_blank' ><Image src={odv} style={{ height: 'auto', width: '15%' }}/></a> & Dataquito
               </Paragraph>
+
             </Box>
-            <Box basis="1/2">
+
+
+            <Box basis="1/2" margin="small">
               <Graph/>
             </Box>
+
           </Box>
 
 
@@ -322,7 +329,7 @@ class Landing extends Component {
                 textAlign="center"
                 margin="small"
                 contentPad="small"
-                label='Solicita tu Jornada de Asesoría Legal'
+                label='Solicita una Jornada de Asesoría Legal'
                 link={<Anchor label='Ver Más'
                   href='https://goo.gl/forms/ERX7XRPJETbxxj4f1'
                   primary={true}
@@ -375,9 +382,9 @@ class Landing extends Component {
             direction="row"
             tag="div"
             responsive
-            focusable
-          >
+            focusable>
           </Box>
+
           <Box className="columns-container"
             pad={{ horizontal: "large" }}
             full="horizontal"
@@ -389,7 +396,7 @@ class Landing extends Component {
           >
             <Columns size="medium"
               justify="center"
-              maxCount={3}
+              maxCount={10}
               contentPad="medium"
               masonry
               responsive
@@ -419,6 +426,31 @@ class Landing extends Component {
                 label='Guía Jurídica'
                 headingStrong={false} />
 
+              <Card thumbnail={
+                <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-A-01.jpg' target='_blank' >
+                <Image src={'https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-A-01.jpg'}
+                  fit='cover'
+                  target='_blank'
+                  full={true} />
+                </a>
+                }
+                margin="small"
+                contentPad="medium"
+                label='Daño Edificio - Propietario'
+                headingStrong={false} />
+
+              <Card thumbnail={
+                <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-B-01.jpg' target='_blank' >
+                <Image src={'https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-B-01.jpg'}
+                  fit='cover'
+                  target='_blank'
+                  full={true} />
+                </a>
+                }
+                margin="small"
+                contentPad="medium"
+                label='Daño Edificio - Ocupante'
+                headingStrong={false} />
 
             </Columns>
 
@@ -454,20 +486,30 @@ class Landing extends Component {
           colorIndex="light-2"
           direction="column">
           <Box basis="full" direction="row">
-            <Box basis="1/2">
-              <Heading tag='h3' strong={true}>SOY ABOGADO/ABOGADA ¿CÓMO AYUDAR?</Heading>
-              <Paragraph>¿Eres abogado/a o perteneces a una firma de abogados y están interesados en realizar trabajo pro bono?</Paragraph>
+            <Box basis="1/3">
+              <Heading tag='h3' strong={true}>Solicita una Jornada de Asesoría Legal:</Heading>
+              <Paragraph>
+              ¿Tienes un grupo de 15 a 25 personas que necesiten asesoría directa en un mismo sitio? Llámanos para organizar una visita a tu localidad.
+              </Paragraph>
+              <Paragraph>
+              Se requiere que la persona solicitante pueda ser contacto directo para organizar a las personas y la logística de la visita. Bienvenidas las solicitudes de organizaciones.
+              </Paragraph>
+
               <Anchor icon={<Edit />}
-                label='Comienza a ayudar'
-                href='https://docs.google.com/forms/d/16va-w1Xu_08GDOl1R0hWKD9r1VNU9uU7gLAHm61jF3Y/viewform?ts=561c096c&edit_requested=true'
+                label='Solicítala Aquí'
+                href='https://goo.gl/forms/ERX7XRPJETbxxj4f1'
                 target='_blank'
                 primary={true} />
             </Box>
-            <Box basis="1/2" alignContent="center" align="center" alignSelf="center">
+            <Box basis="1/3" alignContent="center" align="center" alignSelf="center">
               <Quote >
                 <Paragraph>La palabra Pro Bono deriva del latín pro bono publico que quiere decir “por el bien público” o “por el bien común”. A nivel mundial la comunidad legal entiende por actividad Pro Bono, el trabajo de asesoramiento y/o representación jurídica gratuita en beneficio de la sociedad.</Paragraph>
               </Quote>
             </Box>
+            <Box basis="1/3" alignContent="center" align="center" alignSelf="center">
+              <Image src={'https://image.flaticon.com/icons/svg/568/568883.svg'}/>
+            </Box>
+
           </Box>
         </Box>
 
@@ -561,9 +603,10 @@ class Landing extends Component {
           <Box direction='row'
             align='center'
             pad={{"between": "medium"}}>
-            <Paragraph margin='none'>
-              © 2017 #jurídica19S Powered by Observatorio de Vivienda & Dataquito.
-            </Paragraph>
+              <Paragraph size="small" width="small" margin='none' >
+              #Jurídica19S Powered by <a href='http://www.observatoriodevivienda.org' target='_blank' ><Image src={odv} style={{ height: 'auto', width: '20%' }}/></a> & Dataquito
+              </Paragraph>
+
             <Menu direction='row'
               size='small'
               dropAlign={{"right": "right"}}>

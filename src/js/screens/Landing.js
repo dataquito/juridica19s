@@ -37,6 +37,7 @@ import { getMessage } from 'grommet/utils/Intl';
 
 import NavControl from '../components/NavControl';
 import Infographic_1 from '../../images/flyer_red_probono.jpg';
+import MapCases from '../../images/map_casos.jpg';
 
 // import {
 //   loadDashboard, unloadDashboard
@@ -399,11 +400,21 @@ class Landing extends Component {
 
         <hr/>
         <Box pad="small">
-          <Charts/>
-          <Image src='https://cdn2.slidemodel.com/wp-content/uploads/0052-01-flat-infographic-charting-elements-for-powerpoint-16x9-2.jpg'
-            margin="small"
-            fit='cover'
-            full={true} />
+          <Heading tag='h3' strong={true}>Estadísticas</Heading>
+          <Box direction="row">
+            <Box basis="1/2">
+              <Heading tag='h4' strong={true}>Explicar</Heading>
+              <Paragraph width="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui ligula, rutrum sit amet nisl sed, ornare egestas orci. Quisque ornare dui eu ligula pharetra ornare. Proin a lacinia libero. Sed euismod, lacus non rhoncus feugiat, nisi mauris iaculis mi, id tincidunt enim est et sem. Suspendisse sagittis sapien tellus, pretium porta dui blandit non. Praesent tincidunt eros diam, malesuada iaculis ipsum dapibus ut. Nam pretium est consectetur urna ultrices cursus. Aenean lobortis molestie diam nec vehicula. Suspendisse enim diam, sagittis vitae mi ac, fringilla eleifend nisl. Curabitur lacinia at ligula ac posuere. Vestibulum cursus bibendum lacinia.</Paragraph>
+              <Charts/>
+            </Box>
+            <Box basis="1/2">
+              <Heading tag='h4' strong={true}>Explicar</Heading>
+              <Paragraph width="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui ligula, rutrum sit amet nisl sed, ornare egestas orci. Quisque ornare dui eu ligula pharetra ornare. Proin a lacinia libero. Sed euismod, lacus non rhoncus feugiat, nisi mauris iaculis mi, id tincidunt enim est et sem. Suspendisse sagittis sapien tellus, pretium porta dui blandit non. Praesent tincidunt eros diam, malesuada iaculis ipsum dapibus ut. Nam pretium est consectetur urna ultrices cursus. Aenean lobortis molestie diam nec vehicula. Suspendisse enim diam, sagittis vitae mi ac, fringilla eleifend nisl. Curabitur lacinia at ligula ac posuere. Vestibulum cursus bibendum lacinia.</Paragraph>
+              <Box justify="center" alignContent="center" align="center">
+                <Image src={MapCases} full/>
+              </Box>
+            </Box>
+          </Box>
         </Box>
         <Box>
         </Box>

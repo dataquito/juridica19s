@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Distribution from 'grommet/components/Distribution';
+import HorizontalBar from '../charts/HorizontalBar';
 
 import Paragraph from 'grommet/components/Paragraph';
 import AccordionPanel from 'grommet/components/AccordionPanel';
@@ -27,7 +28,16 @@ class Charts extends Component {
     const series = data.map(v => {
       return { label: v.label, value: v.percentage };
     });
-    return <Distribution series={series} full={false} units='%' />;
+    return (
+      <HorizontalBar
+        className="column is-12"
+        data={data.sort((b, a) => a.percentage - b.percentage)}
+        xFn={d => d.percentage}
+        yFn={d => d.label}
+        keyFn={d => d.key}
+        height={720}
+      />
+    );
   }
 }
 

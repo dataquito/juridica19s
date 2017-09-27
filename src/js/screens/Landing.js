@@ -38,6 +38,10 @@ import { getMessage } from 'grommet/utils/Intl';
 import NavControl from '../components/NavControl';
 import Infographic_1 from '../../images/flyer_red_probono.jpg';
 import MapCases from '../../images/map_casos.jpg';
+import appleseed from '../../images/appleseed.png';
+import fbm from '../../images/fbm.png';
+import PROBONOMX from '../../images/PROBONOMX_blanco.png';
+import probono1 from '../../images/probono1.jpg';
 
 // import {
 //   loadDashboard, unloadDashboard
@@ -131,13 +135,14 @@ class Landing extends Component {
           colorIndex="brand"
           pad={{ horizontal: 'medium', between: 'small' }}
         >
-          <Title>Júridica 19-S</Title>
+          <Title>#Jurídica19S</Title>
           <Box flex={true}
             justify='end'
             direction='row'
             responsive={false}>
           </Box>
         </Header>
+
         <Hero background={<Image src='http://assets.tiempo.com.mx/uploads/imagen/imagen/135208/Cientos-personas-colapsados-Ciudad-Mexico_MILIMA20170919_0481_3.jpg'
             fit='cover'
             full={true} />}
@@ -167,9 +172,9 @@ class Landing extends Component {
                 size="large"
                 contentPad="medium"
                 headingStrong
-                label="#Juridica19S"
+                label="#Jurídica19S"
                 heading="Herramientas jurídicas y necesidades post Sismo"
-                description="#juridica19s es una plataforma que recolecta información y herramientas para atender cualquier tipo de necesidades legales ocasionadas por el sismo."
+                description="#jurídica19s es una plataforma que recolecta información y herramientas para atender cualquier tipo de necesidades legales ocasionadas por el sismo."
                 link={<Anchor label='Solicita ayuda legal'
                   href='https://goo.gl/forms/LB3B1uiXdpkBKhI53'
                   target='_blank'
@@ -335,7 +340,6 @@ class Landing extends Component {
 
 
         <Box align="center"
-          colorIndex="light-2"
           direction="column"
           tag="div"
           focusable
@@ -356,7 +360,6 @@ class Landing extends Component {
             <Heading tag='h2' strong={false}>Infografías</Heading>
           </Box>
           <Box className="columns-container"
-            colorIndex="light-2"
             pad={{ horizontal: "large" }}
             full="horizontal"
             announce={false}
@@ -367,7 +370,6 @@ class Landing extends Component {
           >
           </Box>
           <Box className="columns-container"
-            colorIndex="light-2"
             pad={{ horizontal: "large" }}
             full="horizontal"
             announce={false}
@@ -442,6 +444,95 @@ class Landing extends Component {
         </Box>
 
 
+
+
+
+
+
+
+
+        <Box align="center"
+          direction="column"
+          tag="div"
+          focusable
+          responsive
+          pad={{ vertical: 'small' }}
+        >
+
+          <Box className="columns-container"
+            align="center"
+            size={{ width: "xxlarge" }}
+            pad={{ horizontal: "small" }}
+            announce={false}
+            direction="column"
+            tag="div"
+            responsive
+            focusable
+          >
+            <Heading tag='h2' strong={false}>Red Probono</Heading>
+          </Box>
+          <Box className="columns-container"
+            pad={{ horizontal: "large" }}
+            full="horizontal"
+            announce={false}
+            direction="row"
+            tag="div"
+            responsive
+            focusable
+          >
+          </Box>
+          <Box className="columns-container"
+            pad={{ horizontal: "small" }}
+            full="horizontal"
+            announce={false}
+            direction="column"
+            tag="div"
+            responsive
+            focusable
+          >
+            <Columns size="small"
+              justify="center"
+              maxCount={4}
+              contentPad="medium"
+              masonry
+              responsive
+            >
+              <Card thumbnail={<Image src={appleseed}
+                  fit='cover'
+                  full={true} />}
+                margin="small"
+                contentPad="medium"
+                label=''
+                headingStrong={false} />
+              <Card thumbnail={<Image src={fbm}
+                  fit='cover'
+                  full={true} />}
+                margin="small"
+                contentPad="medium"
+                label=''
+                headingStrong={false} />
+              <Card thumbnail={<Image src={PROBONOMX}
+                  fit='cover'
+                  full={true} />}
+                margin="small"
+                contentPad="medium"
+                label=''
+                headingStrong={false} />
+              <Card thumbnail={<Image src={probono1}
+                  fit='cover'
+                  full={true} />}
+                margin="small"
+                contentPad="medium"
+                label=''
+                headingStrong={false} />
+            </Columns>
+
+          </Box>
+        </Box>
+
+
+
+
         <Footer justify='between'
           pad="small"
           size='large'>
@@ -452,7 +543,7 @@ class Landing extends Component {
             align='center'
             pad={{"between": "medium"}}>
             <Paragraph margin='none'>
-              © 2017 #Juridica19S
+              © 2017 #jurídica19S Powered by Observatorio de Vivienda & Dataquito.
             </Paragraph>
             <Menu direction='row'
               size='small'

@@ -1,10 +1,13 @@
 @import '~grommet/scss/aruba/index';
+body * {
+  font-family: 'Open Sans', sans-serif;
+}
 .answer__paragraph {
   max-width: 100% !important;
   margin-left: 0px !important;
   margin-top: 24px !important;
   margin-bottom: 24px !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   font-weight: 300 !important;
   line-height: 1.375 !important;
 }

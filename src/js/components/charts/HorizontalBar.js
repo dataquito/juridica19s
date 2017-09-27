@@ -29,7 +29,6 @@ const HorizontalBarChartComponent = ({
   const rects = data.map((d, i) => {
     const key = keyFn(d);
     const value = xFn(d);
-    console.log(key, value, d);
     return (
       <rect
         key={i + key}
@@ -49,7 +48,6 @@ const HorizontalBarChartComponent = ({
     const valueToArray = value.split(' ');
     const firstBreak = valueToArray.slice(0, valueToArray.length / 2).join(' ');
     const secondBreak = valueToArray.slice(valueToArray.length / 2, valueToArray.length).join(' ');
-    console.log('secondBreak', secondBreak);
     if(firstBreak.length === 0) {
       return (
         <g key={index} transform={`translate(0,${yPos})`}>

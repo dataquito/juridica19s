@@ -209,7 +209,7 @@ class Landing extends Component {
           >
             <Box basis="1/2">
               <Heading tag="h2" strong margin="none">Jurídica 19-S</Heading>
-              <Paragraph size="medium" width="large" textSize="small"></Paragraph>
+              <Paragraph size="medium" width="large" ></Paragraph>
             </Box>
             <Box basis="1/2">
               <Graph/>
@@ -221,15 +221,15 @@ class Landing extends Component {
 
             <Box basis='1/3' margin="small">
               <Heading tag="h3" strong margin="none">Pilar Informativo</Heading>
-              <Paragraph size="small" width="full" textSize="small"> Información para el público en general y para abogadas y abogados en las que se responden a las preguntas legales principales derivadas de afectaciones por sismo.</Paragraph>
+              <Paragraph size="small" > Información para el público en general y para abogadas y abogados en las que se responden a las preguntas legales principales derivadas de afectaciones por sismo.</Paragraph>
             </Box>
             <Box basis='1/3' margin="small">
               <Heading tag="h3" strong margin="none">Pilar de Atención Directa</Heading>
-              <Paragraph size="small" width="full" textSize="small"> Pide una jornada para tu comunidad en la que abogadas y abogados asistan a orientarte en tus necesidades legales. O, llena el formulario para que se te asigne un asesor o asesora jurídica quien te contactará por teléfono o email para darte orientación.</Paragraph>
+              <Paragraph size="small" > Pide una jornada para tu comunidad en la que abogadas y abogados asistan a orientarte en tus necesidades legales. O, llena el formulario para que se te asigne un asesor o asesora jurídica quien te contactará por teléfono o email para darte orientación.</Paragraph>
             </Box>
             <Box basis='1/3' margin="small">
               <Heading tag="h3" strong margin="none">Análisis Post-Desastre</Heading>
-              <Paragraph size="small" width="full" textSize="small">Consulta los resultados de las diversas iniciativas y sus planes de seguimiento.</Paragraph>
+              <Paragraph size="small" >Consulta los resultados de las diversas iniciativas y sus planes de seguimiento.</Paragraph>
             </Box>
           </Box>
 
@@ -428,7 +428,7 @@ class Landing extends Component {
           <Box basis="full" direction="row">
             <Box basis="1/2">
               <Heading tag='h3' strong={true}>SOY ABOGADO/ABOGADA ¿CÓMO AYUDAR?</Heading>
-              <Paragraph size='xxlarge'>¿Eres abogado/a o perteneces a una firma de abogados y están interesados en realizar trabajo pro bono?</Paragraph>
+              <Paragraph>¿Eres abogado/a o perteneces a una firma de abogados y están interesados en realizar trabajo pro bono?</Paragraph>
               <Anchor icon={<Edit />}
                 label='Comienza a ayudar'
                 href='https://docs.google.com/forms/d/16va-w1Xu_08GDOl1R0hWKD9r1VNU9uU7gLAHm61jF3Y/viewform?ts=561c096c&edit_requested=true'
@@ -484,48 +484,23 @@ class Landing extends Component {
           <Box className="columns-container"
             pad={{ horizontal: "small" }}
             full="horizontal"
-            announce={false}
-            direction="column"
+            direction="row"
             tag="div"
             responsive
             focusable
           >
-            <Columns size="small"
-              justify="center"
-              maxCount={4}
-              contentPad="medium"
-              masonry
-              responsive
-            >
-              <Card thumbnail={<Image src={appleseed}
-                  fit='cover'
-                  full={true} />}
-                margin="small"
-                contentPad="medium"
-                label=''
-                headingStrong={false} />
-              <Card thumbnail={<Image src={fbm}
-                  fit='cover'
-                  full={true} />}
-                margin="small"
-                contentPad="medium"
-                label=''
-                headingStrong={false} />
-              <Card thumbnail={<Image src={PROBONOMX}
-                  fit='cover'
-                  full={true} />}
-                margin="small"
-                contentPad="medium"
-                label=''
-                headingStrong={false} />
-              <Card thumbnail={<Image src={probono1}
-                  fit='cover'
-                  full={true} />}
-                margin="small"
-                contentPad="medium"
-                label=''
-                headingStrong={false} />
-            </Columns>
+            <Box basis="1/4" align="center" margin="large" justify="center">
+              <img src={appleseed} style={{ height: 'auto', width: '100%' }}/>
+            </Box>
+            <Box basis="1/4" align="center" margin="large" justify="center">
+              <img src={fbm} style={{ height: '150px', width: 'auto' }}/>
+            </Box>
+            <Box basis="1/4" align="center" margin="large" justify="center">
+              <img src={PROBONOMX} style={{ height: 'auto', width: '100%' }}/>
+            </Box>
+            <Box basis="1/4" align="center" margin="large" justify="center">
+              <img src={probono1} style={{ height: 'auto', width: '100%' }}/>
+            </Box>
 
           </Box>
         </Box>

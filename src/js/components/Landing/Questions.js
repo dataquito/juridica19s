@@ -29,7 +29,7 @@ class Questions extends Component {
     const TabbedContent = sections.map((section, index) => {
       return (
         <Tab key={index} title={section.key.toUpperCase()}>
-          <Accordion openMulti={true} pad="none">
+          <Accordion openMulti={true}>
             {section.values.map(({ answer, question, category }, i) => {
               return (
                 <AccordionPanel key={`${category}-${i}`} heading={question} basis="full" alignContent="stretch">

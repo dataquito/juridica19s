@@ -174,7 +174,7 @@ class Landing extends Component {
                 headingStrong
                 label="#Jurídica19S"
                 heading="Herramientas jurídicas y necesidades post Sismo"
-                description="#jurídica19s es una plataforma que recolecta información y herramientas para atender cualquier tipo de necesidades legales ocasionadas por el sismo."
+                description="Esta plataforma surge como respuesta de la comunidad jurídica a la emergencia provocada por los sismos de septiembre de 2017 para orientar a las víctimas en sus necesidades legales."
                 link={<Anchor label='Solicita ayuda legal'
                   href='https://goo.gl/forms/LB3B1uiXdpkBKhI53'
                   target='_blank'
@@ -198,6 +198,7 @@ class Landing extends Component {
           <Box
             alignContent="stretch"
             basis="full"
+            margin="large"
             textAlign="left"
             colorIndex="light-1"
             direction="row"
@@ -205,20 +206,25 @@ class Landing extends Component {
             focusable
             responsive
             pad="small"
-            margin="small"
           >
             <Box basis="1/2">
               <Heading tag="h2" strong margin="none">Jurídica 19-S</Heading>
-              <Paragraph size="medium" width="large" ></Paragraph>
+              <Paragraph size="medium" width="large" >
+                    La Fundación Appleseed México, La Fundación Barra Mexicana y el Centro Mexicano Pro Bono unen esfuerzos para brindar esta orientación a través de sus alianzas con universidades, abogados, abogadas y firmas comprometidas con este esfuerzo.
+                    Se invita a las universidades, demás Organizaciones de la Sociedad Civil, Colegios de Abogados y abogadas de todo el país y sociedad en general a unirse a este esfuerzo y compartir información verídica y útil para las personas en necesidad.
+              </Paragraph>
+
+              <Paragraph size="small" width="large" >
+              #Jurídica19S Powered by Observatorio de Vivienda & Dataquito
+              </Paragraph>
             </Box>
             <Box basis="1/2">
               <Graph/>
             </Box>
           </Box>
 
-          <Box direction="row" basis="full" alignContent="stretch" pad="small" colorIndex='grey-4-a'
->
 
+          <Box direction="row" margin="large" basis="full" pad="small" colorIndex='grey-4-a'>
             <Box basis='1/3' margin="small">
               <Heading tag="h3" strong margin="none">Pilar Informativo</Heading>
               <Paragraph size="small" > Información para el público en general y para abogadas y abogados en las que se responden a las preguntas legales principales derivadas de afectaciones por sismo.</Paragraph>
@@ -314,7 +320,7 @@ class Landing extends Component {
                 textAlign="center"
                 margin="small"
                 contentPad="small"
-                label='Suma tu proyecto'
+                label='Solicita tu Jornada de Asesoría Legal'
                 link={<Anchor label='Ver Más'
                   href='https://goo.gl/forms/ERX7XRPJETbxxj4f1'
                   primary={true}
@@ -330,6 +336,7 @@ class Landing extends Component {
           <Box
             colorIndex='grey-4-a'
             pad='small'
+            margin="large"
             direction="column"
             alignContent="stretch"
             responsive
@@ -401,19 +408,19 @@ class Landing extends Component {
 
 
         <hr/>
-        <Box pad="small">
-          <Heading tag='h3' strong={true}>Estadísticas</Heading>
-          <Box direction="row">
-            <Box basis="1/2">
-              <Heading tag='h4' strong={true}>Explicar</Heading>
-              <Paragraph width="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui ligula, rutrum sit amet nisl sed, ornare egestas orci. Quisque ornare dui eu ligula pharetra ornare. Proin a lacinia libero. Sed euismod, lacus non rhoncus feugiat, nisi mauris iaculis mi, id tincidunt enim est et sem. Suspendisse sagittis sapien tellus, pretium porta dui blandit non. Praesent tincidunt eros diam, malesuada iaculis ipsum dapibus ut. Nam pretium est consectetur urna ultrices cursus. Aenean lobortis molestie diam nec vehicula. Suspendisse enim diam, sagittis vitae mi ac, fringilla eleifend nisl. Curabitur lacinia at ligula ac posuere. Vestibulum cursus bibendum lacinia.</Paragraph>
+        <Box pad="small"  margin="large" >
+          <Heading tag='h3' strong={true}>Casos en Números</Heading>
+          <Box direction="row" margin="large" >
+            <Box basis="1/2" >
+              <Heading tag='h4' strong={true}>Tipos de Casos: </Heading>
+              <Paragraph width="large">En la siguiente tabla se observan los tipos de casos recibidos hasta la fecha. </Paragraph>
               <Charts/>
             </Box>
             <Box basis="1/2">
-              <Heading tag='h4' strong={true}>Explicar</Heading>
-              <Paragraph width="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui ligula, rutrum sit amet nisl sed, ornare egestas orci. Quisque ornare dui eu ligula pharetra ornare. Proin a lacinia libero. Sed euismod, lacus non rhoncus feugiat, nisi mauris iaculis mi, id tincidunt enim est et sem. Suspendisse sagittis sapien tellus, pretium porta dui blandit non. Praesent tincidunt eros diam, malesuada iaculis ipsum dapibus ut. Nam pretium est consectetur urna ultrices cursus. Aenean lobortis molestie diam nec vehicula. Suspendisse enim diam, sagittis vitae mi ac, fringilla eleifend nisl. Curabitur lacinia at ligula ac posuere. Vestibulum cursus bibendum lacinia.</Paragraph>
+              <Heading tag='h4' strong={true}>Ubicación Espacial: </Heading>
+              <Paragraph width="large">En el siguiente mapa se observa la localización por zona de los casos recibidos. </Paragraph>
               <Box justify="center" alignContent="center" align="center">
-                <Image src={MapCases} full/>
+                <iframe width="100%" height="700" frameborder="0" src="https://observatoriodevivienda.carto.com/viz/1978ae39-1a68-45b5-87a3-c5bc4405bd2b/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
               </Box>
             </Box>
           </Box>
@@ -469,7 +476,7 @@ class Landing extends Component {
             responsive
             focusable
           >
-            <Heading tag='h2' strong={false}>Red Probono</Heading>
+            <Heading tag='h2' strong={false}>Alianza</Heading>
           </Box>
           <Box className="columns-container"
             pad={{ horizontal: "large" }}
@@ -490,19 +497,35 @@ class Landing extends Component {
             focusable
           >
             <Box basis="1/4" align="center" margin="large" justify="center">
-              <img src={appleseed} style={{ height: 'auto', width: '100%' }}/>
+              <img src={appleseed} style={{ height: 'auto', width: '70%' }}/>
             </Box>
             <Box basis="1/4" align="center" margin="large" justify="center">
-              <img src={fbm} style={{ height: '150px', width: 'auto' }}/>
+              <img src={fbm} style={{ height: '150px', width: '70%' }}/>
             </Box>
             <Box basis="1/4" align="center" margin="large" justify="center">
-              <img src={PROBONOMX} style={{ height: 'auto', width: '100%' }}/>
+              <img src={PROBONOMX} style={{ height: 'auto', width: '35%' }}/>
             </Box>
             <Box basis="1/4" align="center" margin="large" justify="center">
-              <img src={probono1} style={{ height: 'auto', width: '100%' }}/>
+              <img src={probono1} style={{ height: 'auto', width: '70%' }}/>
             </Box>
 
           </Box>
+          <Box className="columns-container"
+            align="center"
+            size={{ width: "xxlarge" }}
+            pad={{ horizontal: "small" }}
+            announce={false}
+            direction="column"
+            tag="div"
+            responsive
+            focusable
+            margin="large"
+          >
+            <Heading tag='h2' strong={false}>Firmas y Profesionales</Heading>
+          </Box>
+
+            <Paragraph style={{ fontSize: 18}} >Baker McKenzie; Basham, Ringe y Correa; Bufete Sánchez Navarro BSN; Chevez Ruiz, Zamarripa; Creel, García-Cuéllar, Aiza y Enriquez; Dla Piper; Greenberg Traurig; Hogan Lovells BSTL; Holland and Knight; Jones Day; Ritch Muller; Sánchez DeVanny; Notaría 92; Notaría 250; Abogadas y abogados independientes: Marco Antonio Vaca; Angeles Anaya; </Paragraph>
+
         </Box>
 
 

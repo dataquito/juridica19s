@@ -42,6 +42,8 @@ import appleseed from '../../images/appleseed.png';
 import fbm from '../../images/fbm.png';
 import PROBONOMX from '../../images/PROBONOMX_blanco.png';
 import probono1 from '../../images/probono1.jpg';
+import guia_juridica from '../../images/guia_juridica.jpg';
+
 
 // import {
 //   loadDashboard, unloadDashboard
@@ -364,7 +366,7 @@ class Landing extends Component {
             responsive
             focusable
           >
-            <Heading tag='h2' strong={false}>Infografías</Heading>
+            <Heading tag='h2' strong={false}>Infografías y Documentos de Interés</Heading>
           </Box>
           <Box className="columns-container"
             pad={{ horizontal: "large" }}
@@ -392,13 +394,32 @@ class Landing extends Component {
               masonry
               responsive
             >
-              <Card thumbnail={<Image src={Infographic_1}
+              <Card thumbnail={
+                <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/ayuda_juridica.jpg' target='_blank' >
+                <Image src={Infographic_1}
                   fit='cover'
-                  full={true} />}
+                  full={true} />
+                </a>
+                }
                 margin="small"
                 contentPad="medium"
                 label='Apoyo Jurídico'
                 headingStrong={false} />
+
+              <Card thumbnail={
+                <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/Gui%CC%81a_Juri%CC%81dica_Consolidada_v2_26.09.2017.pdf' target='_blank' >
+                <Image src={guia_juridica}
+                  fit='cover'
+                  target='_blank'
+                  full={true} />
+                </a>
+                }
+                margin="small"
+                contentPad="medium"
+                label='Guía Jurídica'
+                headingStrong={false} />
+
+
             </Columns>
 
             <span style={{ fontSize: 10}}>La información contenida en esta guía o imagen es general y tiene carácter exclusivamente orientador; por lo tanto, no es y no deberá ser interpretado como una recomendación u opinión para llevar a cabo o abstenerse de llevar a cabo cualquier acción respecto a los temas discutidos en la misma. Esta guía o imagen no sustituye a la asesoría jurídica especializada que, para cada caso, las usuarios deberán obtener antes de actuar sobre uno o más de los temas discutidos en la misma. Los abogados y organizaciones involucradas en la preparación de esta guía general, no emiten ninguna opinión o juicio sobre, y asimismo, de manera expresa, no se hacen responsables de la exactitud de la información contenida en la misma.</span>

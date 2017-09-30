@@ -10,6 +10,7 @@ import { navResponsive } from '../actions/nav';
 
 import Login from '../screens/Login';
 import Landing from '../screens/Landing';
+import News from '../screens/News';
 import Dashboard from '../screens/Dashboard';
 import Tasks from '../screens/Tasks';
 import Task from '../screens/Task';
@@ -40,11 +41,8 @@ class Main extends Component {
       <App centered={false}>
         <Router>
             <Switch>
-              {/*<Route exact={true} path='/' component={Dashboard} />
-              <Route path='/dashboard' component={Dashboard} />*/}
-              <Route path='/' component={Landing} />
-              {/*<Route path='/tasks/:id' component={Task} />
-              <Route path='/tasks' component={Tasks} />*/}
+              <Route path="/News" component={News} />
+              <Route path="/" component={Landing} />
               <Route path='/*' component={NotFound} />
             </Switch>
         </Router>
@@ -52,6 +50,7 @@ class Main extends Component {
     );
   }
 }
+
 
 Main.defaultProps = {
   nav: {

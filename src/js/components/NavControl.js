@@ -15,7 +15,7 @@ class NavControl extends Component {
     const { name, nav: { active } } = this.props;
 
     let result;
-    const title = <Title>{name || 'Juridica19s'}</Title>;
+    const title = <Title>{name || '#Juridica19s'}</Title>;
     if (!active) {
       result = (
         <Button onClick={() => this.props.dispatch(navActivate(true))}>

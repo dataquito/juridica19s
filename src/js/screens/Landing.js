@@ -35,6 +35,8 @@ import Spinning from 'grommet/components/icons/Spinning';
 import Edit from 'grommet/components/icons/base/Edit';
 import Section from 'grommet/components/Section';
 import { getMessage } from 'grommet/utils/Intl';
+import Video from 'grommet/components/Video';
+
 
 import NavControl from '../components/NavControl';
 import Infographic_1 from '../../images/flyer_red_probono.jpg';
@@ -45,7 +47,9 @@ import PROBONOMX from '../../images/PROBONOMX_blanco.png';
 import probono1 from '../../images/probono1.jpg';
 import guia_juridica from '../../images/guia_juridica.jpg';
 import odv from '../../images/observatorio_de_vivienda_t.png';
-
+import news from '../../images/news.svg';
+import CloudIcon from 'grommet/components/icons/base/Cloud';
+import ArticleIcon from 'grommet/components/icons/base/Article';
 
 
 // import {
@@ -134,18 +138,33 @@ class Landing extends Component {
     const { intl } = this.context;
     return (
       <Article primary={true}>
+
         <Header
           fixed
           size="small"
+          float={true}
           colorIndex="brand"
           pad={{ horizontal: 'medium', between: 'small' }}
         >
-          <Title>#Jurídica19S</Title>
-          <Box flex={true}
-            justify='end'
-            direction='row'
-            responsive={false}>
-          </Box>
+
+          <Title><a href='/'> #Jurídica19S</a></Title>
+            <Box flex={true}
+              justify='end'
+              direction='row'
+              responsive={false}>
+            </Box>
+
+            <Box flex={true}
+              justify='end'
+              direction='row'
+              responsive={false}>
+
+              <Menu icon={<ArticleIcon />}>
+                <Anchor href='/News'>
+                  Noticias
+                </Anchor>
+              </Menu>
+            </Box>
         </Header>
 
         <Hero background={<Image src='http://assets.tiempo.com.mx/uploads/imagen/imagen/135208/Cientos-personas-colapsados-Ciudad-Mexico_MILIMA20170919_0481_3.jpg'
@@ -215,25 +234,29 @@ class Landing extends Component {
             <Box basis="1/2">
 
               <Heading tag="h2" strong margin="small">Jurídica 19-S</Heading>
-              <Paragraph size="medium" width="large" >
-                    La Fundación <b>Appleseed México</b>, La <b>Fundación Barra Mexicana</b> y el <b>Centro Mexicano Pro Bono</b> unen esfuerzos para brindar esta orientación a través de sus alianzas con universidades, abogados, abogadas y firmas comprometidas con este esfuerzo.
+              <Paragraph size="medium" width="large" z-index='1' >
+                    La <b>Fundación Appleseed México</b>, La <b>Fundación Barra Mexicana</b> y el <b>Centro Mexicano Pro Bono</b> unen esfuerzos para brindar esta orientación a través de sus alianzas con universidades, abogados, abogadas y firmas comprometidas con este esfuerzo.
                     Se invita a las universidades, demás Organizaciones de la Sociedad Civil, Colegios de Abogados y abogadas de todo el país y sociedad en general a unirse a este esfuerzo y compartir información verídica y útil para las personas en necesidad.
-              </Paragraph>
-              <Paragraph  size="small" width="small" margin='none' >
-                #Jurídica19S Powered by <a href='http://www.observatoriodevivienda.org' target='_blank' ><Image src={odv} style={{ height: 'auto', width: '15%' }}/></a> & Dataquito
               </Paragraph>
 
             </Box>
 
 
-            <Box basis="1/2" margin="small">
+            <Box basis="1/2" margin="small" z-index='1' >
+
               <Graph/>
+
+              <Paragraph  align='end' size="small" >
+                #Jurídica19S Powered by <a href='http://www.observatoriodevivienda.org' target='_blank' ><Image src={odv} style={{ height: 'auto', width: '35%' }}/></a> & Dataquito.
+              </Paragraph>
+
             </Box>
 
           </Box>
 
 
-          <Box direction="row" margin="large" basis="full" pad="small" colorIndex='grey-4-a'>
+
+          <Box direction="row" margin="large" basis="full" pad="small" colorIndex='grey-4-a' z-index='1' >
             <Box basis='1/3' margin="small">
               <Heading tag="h3" strong margin="none">Pilar Informativo</Heading>
               <Paragraph size="small" > Información para el público en general y para abogadas y abogados en las que se responden a las preguntas legales principales derivadas de afectaciones por sismo.</Paragraph>
@@ -248,7 +271,9 @@ class Landing extends Component {
             </Box>
           </Box>
 
-          <Box direction="row">
+
+
+          <Box direction="row" z-index='1'>
               <Box basis='1/3'
               pad={{
                 horizontal: "large",
@@ -268,7 +293,7 @@ class Landing extends Component {
                 textAlign="center"
                 margin="small"
                 contentPad="small"
-                label='Ayudar como Abogado'
+                label='Ayudar como Abogada/Abogado'
                 link={<Anchor label='Ver Más'
                   href='https://docs.google.com/forms/d/16va-w1Xu_08GDOl1R0hWKD9r1VNU9uU7gLAHm61jF3Y/viewform?ts=561c096c&edit_requested=true'
                   primary={true}
@@ -349,7 +374,8 @@ class Landing extends Component {
             direction="column"
             alignContent="stretch"
             responsive
-            basis="full">
+            z-index='1'
+	    basis="full">
             <Heading tag="h3" strong margin="none">Conoce tus obligaciones y derechos de manera sencilla.</Heading>
             <Questions/>
           </Box>
@@ -404,7 +430,8 @@ class Landing extends Component {
               <Card thumbnail={
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/ayuda_juridica.jpg' target='_blank' >
                 <Image src={Infographic_1}
-                  fit='cover'
+                  z-index='1'
+		  fit='cover'
                   full={true} />
                 </a>
                 }
@@ -417,6 +444,7 @@ class Landing extends Component {
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/Gui%CC%81a_Juri%CC%81dica_Consolidada_v2_26.09.2017.pdf' target='_blank' >
                 <Image src={guia_juridica}
                   fit='cover'
+	          z-index='1'
                   target='_blank'
                   full={true} />
                 </a>
@@ -430,6 +458,7 @@ class Landing extends Component {
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-A-01.jpg' target='_blank' >
                 <Image src={'https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-A-01.jpg'}
                   fit='cover'
+	          z-index='1'
                   target='_blank'
                   full={true} />
                 </a>
@@ -443,6 +472,7 @@ class Landing extends Component {
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-B-01.jpg' target='_blank' >
                 <Image src={'https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-B-01.jpg'}
                   fit='cover'
+	          z-index='1'
                   target='_blank'
                   full={true} />
                 </a>
@@ -480,6 +510,8 @@ class Landing extends Component {
         </Box>
         <Box>
         </Box>
+
+
 
         <Box pad='medium'
           basis="full"
@@ -585,11 +617,12 @@ class Landing extends Component {
             margin="large"
           >
             <Heading tag='h2' strong={false}>Firmas y Profesionales</Heading>
-          </Box>
+           <Paragraph style={{ fontSize: 20}} ><b>Firmas y profesionales:</b> Baker McKenzie; Basham, Ringe y Correa; Bufete Jurídico Gratuito Universidad Panamericana; Bufete Sánchez Navarro BSN; Chevez Ruiz, Zamarripa; Creel, García-Cuéllar, Aiza y Enriquez; Dla Piper; Greenberg Traurig; Hogan Lovells BSTL; Holland and Knight; Jauregui y Del Valle; Jones Day; Ritch Muller; Sánchez DeVanny; Notaría 92; Notaría 250;
+            <b>Abogadas y abogados independientes:</b> Angeles Anaya; Carmen Segura; Dina Moreno; Marco Antonio Vaca; Sandra Segura; Valeria Ponce Najera; <b>Diseño de infografías</b>: Raúl Espino;
+            </Paragraph>
 
-            <Paragraph style={{ fontSize: 18}} >Baker McKenzie; Basham, Ringe y Correa; Bufete Sánchez Navarro BSN; Chevez Ruiz, Zamarripa; Creel, García-Cuéllar, Aiza y Enriquez; Dla Piper; Greenberg Traurig; Hogan Lovells BSTL; Holland and Knight; Jones Day; Ritch Muller; Sánchez DeVanny; Notaría 92; Notaría 250; Abogadas y abogados independientes: Marco Antonio Vaca; Angeles Anaya; </Paragraph>
-
-        </Box>
+  	    </Box>
+     </Box>
 
 
 
@@ -602,6 +635,7 @@ class Landing extends Component {
           </Title>
           <Box direction='row'
             align='center'
+            z-index='1'
             pad={{"between": "medium"}}>
               <Paragraph size="small" width="small" margin='none' >
               #Jurídica19S Powered by <a href='http://www.observatoriodevivienda.org' target='_blank' ><Image src={odv} style={{ height: 'auto', width: '20%' }}/></a> & Dataquito

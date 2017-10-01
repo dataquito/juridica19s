@@ -43,7 +43,6 @@ class Main extends Component {
             <Switch>
               <Route path="/News" component={News} />
               <Route path="/" component={Landing} />
-              <Route path='/*' component={NotFound} />
             </Switch>
         </Router>
       </App>

@@ -303,6 +303,7 @@ class Landing extends Component {
                 headingStrong={false} />
 
             </Box>
+        <hr/>
             <Box basis='1/3'
               pad={{
                 horizontal: "large",
@@ -333,7 +334,7 @@ class Landing extends Component {
                 headingStrong={false} />
 
             </Box>
-
+        <hr/>
             <Box basis='1/3'
               pad={{
                 horizontal: "large",
@@ -366,7 +367,7 @@ class Landing extends Component {
             </Box>
           </Box>
         </Box>
-
+        <hr/>
           <Box
             colorIndex='grey-4-a'
             pad='small'
@@ -380,7 +381,7 @@ class Landing extends Component {
             <Questions/>
           </Box>
 
-
+        <hr/>
         <Box align="center"
           direction="column"
           tag="div"
@@ -412,7 +413,6 @@ class Landing extends Component {
           </Box>
 
           <Box className="columns-container"
-            pad={{ horizontal: "large" }}
             full="horizontal"
             announce={false}
             direction="column"
@@ -430,12 +430,14 @@ class Landing extends Component {
               <Card thumbnail={
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/ayuda_juridica.jpg' target='_blank' >
                 <Image src={Infographic_1}
-                  z-index='1'
-		  fit='cover'
-                  full={true} />
+                z-index='1'
+                fit='cover'
+                full={true} />
                 </a>
                 }
                 margin="small"
+                z-index='1'
+                style={{ height: 'auto', width: '90%' }}
                 contentPad="medium"
                 label='Apoyo Jurídico'
                 headingStrong={false} />
@@ -443,14 +445,15 @@ class Landing extends Component {
               <Card thumbnail={
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/Gui%CC%81a_Juri%CC%81dica_Consolidada_v2_26.09.2017.pdf' target='_blank' >
                 <Image src={guia_juridica}
+                  z-index='1'
                   fit='cover'
-	          z-index='1'
-                  target='_blank'
                   full={true} />
                 </a>
                 }
                 margin="small"
                 contentPad="medium"
+                z-index='1'
+                style={{ height: 'auto', width: '100%' }}
                 label='Guía Jurídica'
                 headingStrong={false} />
 
@@ -458,13 +461,14 @@ class Landing extends Component {
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-A-01.jpg' target='_blank' >
                 <Image src={'https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-A-01.jpg'}
                   fit='cover'
-	          z-index='1'
                   target='_blank'
                   full={true} />
                 </a>
                 }
                 margin="small"
                 contentPad="medium"
+                z-index='1'
+                style={{ height: 'auto', width: '70%' }}
                 label='Daño Edificio - Propietario'
                 headingStrong={false} />
 
@@ -472,13 +476,14 @@ class Landing extends Component {
                 <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-B-01.jpg' target='_blank' >
                 <Image src={'https://s3.amazonaws.com/www.juridica19s.org/utils/infografia1-B-01.jpg'}
                   fit='cover'
-	          z-index='1'
                   target='_blank'
                   full={true} />
                 </a>
                 }
+                z-index='1'
                 margin="small"
                 contentPad="medium"
+                style={{ height: 'auto', width: '70%' }}
                 label='Daño Edificio - Ocupante'
                 headingStrong={false} />
 
@@ -545,12 +550,27 @@ class Landing extends Component {
           </Box>
         </Box>
 
+        <Box pad='medium'
+          basis="full"
+          align="center"
+          direction="column">
+            <Heading tag='h2' strong={false}>Videos</Heading>
 
+          <Box basis="full" direction="row">
+            <Box basis="1/2" alignContent="center" align="center" margin='medium' alignSelf="center">
+              <iframe width="420" height="315"
+              src="https://www.youtube.com/embed/ULMTgcRb5NY">
+              </iframe>
+            </Box>
+            <Box basis="1/2" alignContent="center" align="center" margin='medium' alignSelf="center">
+              <iframe width="420" height="315"
+              src="https://www.youtube.com/embed/Vf77TpqehP0">
+              </iframe>
+            </Box>
+          </Box>
+        </Box>
 
-
-
-
-
+        <hr/>
 
 
         <Box align="center"
@@ -605,21 +625,26 @@ class Landing extends Component {
             </Box>
 
           </Box>
+
           <Box className="columns-container"
             align="center"
             size={{ width: "xxlarge" }}
-            pad={{ horizontal: "small" }}
+            pad={{ horizontal: "large" }}
             announce={false}
             direction="column"
             tag="div"
             responsive
             focusable
-            margin="large"
+            margin="medium"
           >
             <Heading tag='h2' strong={false}>Firmas y Profesionales</Heading>
-           <Paragraph style={{ fontSize: 20}} ><b>Firmas y profesionales:</b> Baker McKenzie; Basham, Ringe y Correa; Bufete Jurídico Gratuito Universidad Panamericana; Bufete Sánchez Navarro BSN; Chevez Ruiz, Zamarripa; Creel, García-Cuéllar, Aiza y Enriquez; Dla Piper; Greenberg Traurig; Hogan Lovells BSTL; Holland and Knight; Jauregui y Del Valle; Jones Day; Ritch Muller; Sánchez DeVanny; Notaría 92; Notaría 250;
+            <Paragraph style={{ fontSize: 20}}>
+            <b>Firmas y profesionales:</b> Baker McKenzie; Basham, Ringe y Correa; Bufete Jurídico Gratuito Universidad Panamericana; Bufete Sánchez Navarro BSN; Chevez Ruiz, Zamarripa; Creel, García-Cuéllar, Aiza y Enriquez; Dla Piper; Greenberg Traurig; Hogan Lovells BSTL; Holland and Knight; Jauregui y Del Valle; Jones Day; Ritch Muller; Sánchez DeVanny; Notaría 92; Notaría 250;
+            </Paragraph>
+            <Paragraph style={{ fontSize: 20}}>
             <b>Abogadas y abogados independientes:</b> Angeles Anaya; Carmen Segura; Dina Moreno; Marco Antonio Vaca; Sandra Segura; Valeria Ponce Najera; <b>Diseño de infografías</b>: Raúl Espino;
             </Paragraph>
+
 
   	    </Box>
      </Box>

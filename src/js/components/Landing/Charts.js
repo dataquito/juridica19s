@@ -35,7 +35,7 @@ class Charts extends Component {
         xFn={d => d.percentage}
         yFn={d => d.label}
         keyFn={d => d.key}
-        height={720}
+        height={400}
       />
     );
   }
@@ -43,7 +43,7 @@ class Charts extends Component {
 
 export default Charts;
             // <Accordion openMulti={true} pad="none">
-            //   <AccordionPanel 
+            //   <AccordionPanel
             //     heading='¿Qué obligaciones y derechos tengo si soy propietario de un inmueble que se dañó y que estaba dado en arrendamiento?' basis="full" alignContent="stretch"
             //     responsive
             //   >

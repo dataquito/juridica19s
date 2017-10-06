@@ -207,6 +207,8 @@ class Landing extends Component {
 
 
           <Box direction="row" z-index='1'>
+
+
             <Box basis='1/3'
               pad={{
                 horizontal: "medium",
@@ -225,23 +227,24 @@ class Landing extends Component {
               colorIndex="neutral-1">
 
               <Card thumbnail={
-                <Image src={'http://eleconomista.com.mx/files/imagecache/eco2014_650x433/files/0_rtrmadp_3_mexico-quake_3.jpg'}/>}
+                <Image src={'http://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2017/10/05/afectados_sismo_4.jpg?itok=XoXc4obo'}/>}
                 margin="small"
                 contentPad="small"
-                heading='Ausencias laborales están justificadas; CDMX presenta 9 centros con restricciones'
-                label='El Economista'
-                description='Las empresas, además de garantizar la seguridad en los centros de trabajo, deben estar atentas sobre ausencias laborales, ajustar protocolos de protección civil y establecer programas de apoyo a quienes sufrieron alguna pérdida.'
+                heading='Ofrecen asesoría jurídica por teléfono e internet a afectados por sismo'
+                label='El Universal'
+                description='Organizaciones civiles elaboraron una guía jurídica para los damnificados con el apoyo de más de 10 firmas de abogados.'
 
                 link={<Anchor label='Ver Más'
                   target='_blank'
                   textSize ='small'
-                  href='http://eleconomista.com.mx/industrias/2017/09/24/ausencias-laborales-estan-justificadas-cdmx-9-restricciones'
+                  href='http://www.eluniversal.com.mx/metropoli/cdmx/ofrecen-asesoria-juridica-por-telefono-e-internet-afectados-por-sismo'
                   primary={true}
                   reverse={false}
                   disabled={false}
                   />}
                 headingStrong={false} />
             </Box>
+
 
 
             <Box basis='1/3'
@@ -262,23 +265,25 @@ class Landing extends Component {
               colorIndex="neutral-1">
 
               <Card thumbnail={
-                <Image src={'http://eleconomista.com.mx/files/imagecache/eco2014_650x433/files/building_reuters.jpg'}/>}
+                <Image src={'https://cdn.expansion.mx/dims4/default/4837bce/2147483647/crop/3500x1969%2B0%2B347/resize/800x450%5E/quality/75/?url=https%3A%2F%2Fcdn.expansion.mx%2Fc8%2Fc6%2F0363f5814c01a1cf5f003961afad%2F2017-09-21t221941z-526119277-rc123c1f3b40-rtrmadp-3-mexico-quake-1.JPG'}/>}
                 margin="small"
-                textSize ='small'
                 contentPad="small"
-                heading='¿Qué trámites tienes que hacer si se cayó tu edificio con el sismo?'
-                label='El Economista'
-                description='Debido a lo inesperado y fortuito de un evento como el sismo del martes, en ocasiones las escrituras y otros documentos, como las pólizas de seguros y los testamentos, se extravían o se dañan a tal grado que son prácticamente inservibles.'
+                heading='Qué hacer si tu condominio se dañó o se destruyó con el sismo'
+                label='Expansión'
+                description='Si tu departamento sufrió daños, revisa la póliza que por ley deben tener los administradores. En caso de destrucción total, puedes optar por otras alternativas.'
 
                 link={<Anchor label='Ver Más'
-                  href='http://m.eleconomista.mx/sociedad/2017/09/21/tramites-que-hay-que-hacer-se-cayo-tu-edificio-sismo'
                   target='_blank'
+                  textSize ='small'
+                  href='http://expansion.mx/dinero/2017/09/22/que-hacer-si-tu-condominio-se-dano-o-se-destruyo-con-el-sismo'
                   primary={true}
                   reverse={false}
                   disabled={false}
                   />}
                 headingStrong={false} />
             </Box>
+
+
 
 
             <Box basis='1/3'

@@ -443,7 +443,7 @@ class Landing extends Component {
                 headingStrong={false} />
 
               <Card thumbnail={
-                <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/Gui%CC%81a_Juri%CC%81dica_Consolidada_v2_26.09.2017.pdf' target='_blank' >
+                <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/Gu%C3%ADa_Jur%C3%ADdica_Consolidada_v3_04.10.2017.pdf' target='_blank' >
                 <Image src={guia_juridica}
                   z-index='1'
                   fit='cover'
@@ -507,9 +507,11 @@ class Landing extends Component {
             <Box basis="1/2">
               <Heading tag='h4' strong={true}>Ubicación Espacial: </Heading>
               <Paragraph width="large">En el siguiente mapa se observa la localización por zona de los casos recibidos. </Paragraph>
+
               <Box justify="center" alignContent="center" align="center">
-                <iframe width="100%" height="700" frameborder="0" src="https://observatoriodevivienda.carto.com/viz/1978ae39-1a68-45b5-87a3-c5bc4405bd2b/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                <iframe width="600" height="400" frameborder="0" src="https://observatoriodevivienda.carto.com/viz/1978ae39-1a68-45b5-87a3-c5bc4405bd2b/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
               </Box>
+
             </Box>
           </Box>
         </Box>
@@ -554,7 +556,7 @@ class Landing extends Component {
           basis="full"
           align="center"
           direction="column">
-            <Heading tag='h2' strong={false}>Videos</Heading>
+            <Heading tag='h2' strong={false}>#Jurídica19s en los Medios</Heading>
 
           <Box basis="full" direction="row">
             <Box basis="1/2" alignContent="center" align="center" margin='medium' alignSelf="center">
@@ -567,6 +569,7 @@ class Landing extends Component {
               src="https://www.youtube.com/embed/Vf77TpqehP0">
               </iframe>
             </Box>
+
           </Box>
         </Box>
 

@@ -642,7 +642,16 @@ class Landing extends Component {
           >
             <Heading tag='h2' strong={false}>Firmas y Profesionales</Heading>
             <Paragraph style={{ fontSize: 20}}>
-            <b>Firmas y profesionales:</b> Baker McKenzie; Basham, Ringe y Correa; Bufete Jurídico Gratuito Universidad Panamericana; Bufete Sánchez Navarro BSN; Chevez Ruiz, Zamarripa; Creel, García-Cuéllar, Aiza y Enriquez; Dla Piper; Greenberg Traurig; Hogan Lovells BSTL; Holland and Knight; Jauregui y Del Valle; Jones Day; Ritch Muller; Sánchez DeVanny; Notaría 92; Notaría 250;
+            <b>Firmas y profesionales:</b>
+            Aiza y Enriquez;
+            Baker McKenzie; Basham, Ringe y Correa;
+            Bufete Jurídico Gratuito Universidad Panamericana; Bufete Sánchez Navarro BSN;
+            Chevez Ruiz, Zamarripa; Creel, García-Cuéllar,
+            Dla Piper;
+            Greenberg Traurig; Hogan Lovells BSTL; Holland and Knight;
+            Jauregui y Del Valle; Jones Day;
+            Müggenburg Gorches y Peñalosa SC;
+            Notaría 92; Notaría 250; Ritch Muller; Sánchez DeVanny;
             </Paragraph>
             <Paragraph style={{ fontSize: 20}}>
             <b>Abogadas y abogados independientes:</b> Angeles Anaya; Carmen Segura; Dina Moreno; Marco Antonio Vaca; Sandra Segura; Valeria Ponce Najera; <b>Diseño de infografías</b>: Raúl Espino;

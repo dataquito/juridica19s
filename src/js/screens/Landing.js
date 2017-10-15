@@ -487,6 +487,22 @@ class Landing extends Component {
                 label='Daño Edificio - Ocupante'
                 headingStrong={false} />
 
+              <Card thumbnail={
+                <a href='https://s3.amazonaws.com/www.juridica19s.org/utils/white_case_mexico_-_plan_de_accion_post_sismo.pdf' target='_blank' >
+                <Image src={'https://s3.amazonaws.com/www.juridica19s.org/utils/plan_accion.png'}
+                  fit='cover'
+                  target='_blank'
+                  full={true} />
+                </a>
+                }
+                z-index='1'
+                margin="small"
+                contentPad="medium"
+                style={{ height: 'auto', width: '70%' }}
+                label='Plan de Acción Post-Sismo'
+                headingStrong={false} />
+
+
             </Columns>
 
             <span style={{ fontSize: 10}}>La información contenida en esta guía o imagen es general y tiene carácter exclusivamente orientador; por lo tanto, no es y no deberá ser interpretado como una recomendación u opinión para llevar a cabo o abstenerse de llevar a cabo cualquier acción respecto a los temas discutidos en la misma. Esta guía o imagen no sustituye a la asesoría jurídica especializada que, para cada caso, las usuarios deberán obtener antes de actuar sobre uno o más de los temas discutidos en la misma. Los abogados y organizaciones involucradas en la preparación de esta guía general, no emiten ninguna opinión o juicio sobre, y asimismo, de manera expresa, no se hacen responsables de la exactitud de la información contenida en la misma.</span>
@@ -652,6 +668,7 @@ class Landing extends Component {
             Jauregui y Del Valle; Jones Day;
             Müggenburg Gorches y Peñalosa SC;
             Notaría 92; Notaría 250; Ritch Muller; Sánchez DeVanny;
+            White & Case;
             </Paragraph>
             <Paragraph style={{ fontSize: 20}}>
             <b>Abogadas y abogados independientes:</b> Angeles Anaya; Carmen Segura; Dina Moreno; Marco Antonio Vaca; Sandra Segura; Valeria Ponce Najera; <b>Diseño de infografías</b>: Raúl Espino;
